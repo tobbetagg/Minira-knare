@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+    var firstn , secondn , raknesatt , answer;
+    
+//fråga efter tal
+    firstn=prompt("skriv in första talet");
+    raknesatt=prompt("Välj räknesätt   +   -   *   /")
+    secondn=prompt("skriv in andra talet");
+//bearbeta tal
+    if (raknesatt == "+") {
+    answer = parseInt(firstn) + parseInt(secondn);
+    }
+    else if (raknesatt=="-") {
+    answer=parseInt(firstn)-parseInt(secondn)
+    }
+    else if (raknesatt=="*") {
+    answer=parseInt(firstn)*parseInt(secondn)
+    }
+    else if (raknesatt=="/") {
+    answer=parseInt(firstn)/parseInt(secondn)
+    }
+    else alert("vad fan sysslar du med")
+//Skriv ut tal
+    alert(answer);
+</script>
+</head>
+</html>
